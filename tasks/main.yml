@@ -67,7 +67,7 @@
       regexp: 'max_execution_time = 30'
       replace: 'max_execution_time = 120'
       backup: yes
-    notify:]
+      notify:
       - apache2_restart
 
   - name: Teampass | Copia do arquivo apache vhost
