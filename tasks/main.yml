@@ -10,8 +10,14 @@
 
   - name: "Instalando Pre Requisitos"
     shell: wget -q https://packages.sury.org/php/apt.gpg -O- | apt-key add -
+
+  - name: "Instalando certificates"
     shell: apt install ca-certificates apt-transport-https
+
+  - name: "Instalando repositorio php"
     shell: echo "deb https://packages.sury.org/php/ stretch main" | tee /etc/apt/sources.list.d/php.list
+
+  -name: "Atualizando Sistema Operacional"
     shell: apt update -y
 
   - name: "Instalando pacotes"
@@ -30,14 +36,13 @@
       - php7.1-mysql
       - php7.1-curl
       - php7.1-mbstring
-      - php7.1-openssl
       - php7.1-bcmath
       - php7.1-iconv
       - php7.1-gd
-      - php7.1-mysql_fetch_all
       - php7.1-xml
       - php7.1-fpm
       - php7.1-ldap
+      - mysql-client
 
 
 
