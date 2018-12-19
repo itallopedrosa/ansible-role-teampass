@@ -77,6 +77,25 @@
       notify:
       - apache2_restart
 
+  - name: "Alterando Parametro PHP post_max_size = 8 to post_max_size = 32"
+    replace:
+      path: /etc/php/7.1/apache2/php.ini
+      regexp: 'post_max_size = 8M'
+      replace: 'post_max_size = 32M'
+      backup: yes
+      notify:
+      - apache2_restart
+
+  - name: "Alterando Parametro PHP upload_max_filesize = 2 to upload_max_filesize = 300"
+    replace:
+      path: /etc/php/7.1/apache2/php.ini
+      regexp: 'upload_max_filesize = 2M'
+      replace: 'upload_max_filesize = 300M'
+      backup: yes
+      notify:
+      - apache2_restart
+
+
   - name: Teampass | Copia do arquivo apache vhost
     action: template src=teampass.conf.j2 dest=/etc/apache2/sites-available/teampass.conf mode=644
     notify:
