@@ -15,3 +15,4 @@
   tp_dbname           : teampass
   tp_dbuser           : teampass
   tp_passwd           : teampass
+  teampass_server_name: teampass.turismo.gov.br

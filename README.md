@@ -1,8 +1,8 @@
 ## Description
-Installing TeamPass server on Ubuntu
+Installing TeamPass server on Debian 9
 
 ## Requirements
-- Ubuntu 18.04
+- Debian 9
 - MySQL server 5.7.x
 
 
@@ -17,6 +17,8 @@ Installing TeamPass server on Ubuntu
   tp_dbuser: teampass : teampass
 
   tp_dbpass: teampass : teampass
+
+  teampass_server_name : teampass.turismo.gov.br
 
 ## Source(s)
 Thanks goes to all the authors and participants from
