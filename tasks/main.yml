@@ -1,8 +1,8 @@
 ---
   # Title: tasks file for ansible-role-teampass
   #
-  # Author: Luc Rutten
-  # Version: 1.0
+  # Author: Itallo Pedrosa
+  # Version: 2.0
   # File: tasks/main.yml
   #
   # Description:
@@ -67,7 +67,7 @@
       regexp: 'max_execution_time = 30'
       replace: 'max_execution_time = 120'
       backup: yes
-    notify:
+    notify:]
       - apache2_restart
 
   - name: Teampass | Copia do arquivo apache vhost
