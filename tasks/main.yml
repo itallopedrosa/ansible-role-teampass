@@ -29,6 +29,7 @@
       - apache2
       - git
       - mcrypt
+      - openssl
       - curl
       - php7.1
       - php7.1-cli
