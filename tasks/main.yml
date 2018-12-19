@@ -9,7 +9,7 @@
   #   Password server for teams
 
   - name: "Instalando Pre Requisitos"
-    shell: wget -q https://packages.sury.org/php/apt.gpg -O- |apt-key add -
+    shell: wget -q https://packages.sury.org/php/apt.gpg -O- | apt-key add -
     shell: apt install ca-certificates apt-transport-https
     shell: echo "deb https://packages.sury.org/php/ stretch main" | tee /etc/apt/sources.list.d/php.list
     shell: apt update -y
