@@ -89,8 +89,6 @@
       regexp: 'upload_max_filesize = 2M'
       replace: 'upload_max_filesize = 300M'
       backup: yes
-      notify:
-      - apache2_restart
 
 
   - name: Teampass | Copia do arquivo apache vhost
