@@ -17,7 +17,7 @@
   - name: "Instalando repositorio php"
     shell: echo "deb https://packages.sury.org/php/ stretch main" | tee /etc/apt/sources.list.d/php.list
 
-  -name: "Atualizando Sistema Operacional"
+  - name: "Atualizando Sistema Operacional"
     shell: apt update -y
 
   - name: "Instalando pacotes"
