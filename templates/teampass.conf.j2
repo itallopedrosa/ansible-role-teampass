@@ -10,4 +10,10 @@ DirectoryIndex index.php index.html
     Options -Indexes +FollowSymLinks
     Require all granted
   </Directory>
+
+  ErrorLog ${APACHE_LOG_DIR}/{{ teampass_server_name }}-error_log
+  LogLevel warn
+  CustomLog ${APACHE_LOG_DIR}/{{ teampass_server_name }}-access_log combined
+  ServerSignature On
+
 </VirtualHost>
