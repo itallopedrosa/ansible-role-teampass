@@ -24,4 +24,4 @@ Installing TeamPass server on Debian 9
 Thanks goes to all the authors and participants from
 the sources below, so I could write this Anisble role.
 
-https://teampass.net/https://teampass.net/
+https://teampass.net/
